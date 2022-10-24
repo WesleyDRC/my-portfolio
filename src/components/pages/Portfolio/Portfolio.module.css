@@ -1,0 +1,40 @@
+.portfolio {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.boxPortfolio {
+  background: rgba(123, 74, 226, 0.1);
+  width: max-content;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.projects {
+  width: 100%;
+  text-align: center;
+}
+
+.project_header {
+  margin: 0 auto 0 auto;
+  max-width: 600px;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+
+.project_column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+
+}

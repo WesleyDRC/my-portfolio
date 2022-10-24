@@ -1,0 +1,32 @@
+.contact {
+    width: 100%;
+    height: calc(100vh - 55px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile_header {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+}
+
+.social_list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social_list li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-out;
+}
+
+.social_list li a:hover{
+    transform: translateY(10px);
+}
