@@ -13,12 +13,14 @@ export default function Portfolio() {
     {
       id: 1,
       name: 'FlatList',
-      image: flatList
+      image: flatList,
+      link: 'https://snack.expo.dev/@wesleydrc/listaaaaa'
     },
     {
       id: 2,
       name: 'Passagem de Parâmetros',
-      image: passagemParametros
+      image: passagemParametros,
+      link:''
     },
     {
       id: 3,
@@ -45,15 +47,16 @@ export default function Portfolio() {
           Esses são alguns dos meus projetos
         </h2>
 
-        <ul className={styles.project_column}>
+        <div className={styles.project_column}>
             {projects.map((project) => (
               <Project 
                 id={project.id}
                 name={project.name}
                 image={project.image}
+                link={project.link}
               />
             ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
