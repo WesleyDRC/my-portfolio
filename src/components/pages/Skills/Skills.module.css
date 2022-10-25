@@ -61,3 +61,19 @@
     max-width: 600px;
     white-space: nowrap;
 }
+
+.skills {
+    animation: toRight 0.3s 0.3s backwards;
+    transition: transform 0.3s;
+  }
+  
+  @keyframes toRight {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

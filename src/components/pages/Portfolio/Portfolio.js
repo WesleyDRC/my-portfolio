@@ -20,17 +20,19 @@ export default function Portfolio() {
       id: 2,
       name: 'Passagem de Parâmetros',
       image: passagemParametros,
-      link:''
+      link:'https://snack.expo.dev/@wesleydrc/passagemdeparametrosdupla'
     },
     {
       id: 3,
       name: 'App Filmes/Séries',
-      image: netflix
+      image: netflix,
+      link: 'https://snack.expo.dev/@wesleydrc/a03271'
     },
     {
       id: 4,
       name: 'Layout Responsivo',
-      image: layoutResponsivo
+      image: layoutResponsivo,
+      link:'https://snack.expo.dev/@wesleydrc/6cba1a'
     }
   ]
 
@@ -46,10 +48,11 @@ export default function Portfolio() {
         <h2 className={styles.project_header}>
           Esses são alguns dos meus projetos
         </h2>
-
+        <p className={styles.subtitle}> Todos esses projetos foram feitos durante a matéria de PROGRAMAÇÃO DE APLICATIVOS MOBILE I </p>
         <div className={styles.project_column}>
             {projects.map((project) => (
               <Project 
+                key={project.id}
                 id={project.id}
                 name={project.name}
                 image={project.image}

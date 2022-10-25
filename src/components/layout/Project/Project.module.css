@@ -24,6 +24,7 @@
   height: 100%;
   position: relative;
   opacity: 0.3;
+  transition: all 0.35s ease;
 }
 
 figcaption {
@@ -36,8 +37,25 @@ figcaption {
   border-width: 0 1px;
   background-color: rgba(29,29,29,0.2);
   color:white;
+  transition: all 0.35s ease-in-out;
 }
 .project_subtitle {
   color: white;
-  font-size: 3rem;
+  font-size: 2.3rem;
+  
+}
+
+
+.project_item:hover img{
+  opacity: 0.09;
+  transform: scale(1.1);
+}
+.project_item:hover figcaption {
+  border-width: 1px 1px;
+}
+.project_item:hover .code {
+  color: orange;
+}
+.project_item:hover .code span {
+  color: orange;
 }

@@ -16,7 +16,6 @@
 
 .projects {
   width: 100%;
-  text-align: center;
 }
 
 .project_header {
@@ -28,6 +27,12 @@
   font-size: 30px;
 }
 
+.subtitle {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+}
+
 .project_column {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -35,4 +40,21 @@
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 6rem;
+text-align: center;
+}
+
+.projects {
+  animation: toRight 0.3s 0.3s backwards;
+  transition: transform 0.3s;
+}
+
+@keyframes toRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
