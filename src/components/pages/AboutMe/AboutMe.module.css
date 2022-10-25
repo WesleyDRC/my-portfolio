@@ -1,66 +1,66 @@
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 55px);
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 55px);
+  width: 100%;
 }
 
 .myImage {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .myImage > div {
-    max-width: 250px;
-    background-image: linear-gradient(
-        90deg,
-        #9572fc 0%,
-        #43e7ad 50.52%,
-        #e2d45c 100%
-      );
-      border-radius: 50%;
-      display: flex;
-      padding: 4px;
+  max-width: 250px;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  padding: 4px;
 }
 .myImage img {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
-.aboutMe{
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.aboutMe {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .aboutMe h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .aboutMe p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 .boxAboutMe {
-    background: rgba(123, 74, 226, 0.1);
-    width: max-content;
-    border-radius: 10px;
-    padding: 10px;
+  background: rgba(123, 74, 226, 0.1);
+  width: max-content;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .content {
-    animation: toDown 0.3s 0.3s backwards;
-    transition: transform 0.3s;
+  animation: toRight 0.3s 0.3s backwards;
+  transition: transform 0.3s;
 }
 
-@keyframes toDown {
+@keyframes toRight {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(-30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0px)
+    transform: translateX(0px);
   }
 }

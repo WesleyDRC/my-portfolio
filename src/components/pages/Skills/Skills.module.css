@@ -1,79 +1,86 @@
 .skills {
-    width: 100%;
+  width: 100%;
+  height: calc(100vh - 55px);
 }
 
 .boxSkills {
-    background: rgba(123, 74, 226, 0.1);
-    width: max-content;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 1.6rem;
-    color: white;
+  background: rgba(123, 74, 226, 0.1);
+  width: max-content;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.6rem;
+  color: white;
 }
-
+.allSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 .hardSkills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .skills_header {
-    max-width: 600px;
-    border-bottom: 1px solid white;
-    color: white;
-    margin-bottom: 60px;
-    font-size: 30px;
+  max-width: 600px;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-bottom: 60px;
+  font-size: 30px;
 }
 
 .techs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .techs h2 {
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.5);
-    padding-bottom: 5px;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 5px;
 }
 .listTechs {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 .softSkills {
-    margin: 60px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .listSoftSkills {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    font-size: 1.6rem;
-    color: white;
-    list-style: inside;
-    max-width: 600px;
-    white-space: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  font-size: 1.6rem;
+  color: white;
+  list-style: inside;
+  max-width: 600px;
+  white-space: nowrap;
 }
 
 .skills {
-    animation: toRight 0.3s 0.3s backwards;
-    transition: transform 0.3s;
+  animation: toRight 0.3s 0.3s backwards;
+  transition: transform 0.3s;
+}
+
+@keyframes toRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
   }
-  
-  @keyframes toRight {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
+}
